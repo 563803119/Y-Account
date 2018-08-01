@@ -1,0 +1,57 @@
+/* pages/add/add.wxss */
+.form{
+  width: 100%;
+}
+.add-count{
+  text-align: center;
+}
+.input-view{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-style{
+  width: 90%;
+  border-bottom: 2rpx solid #3b8cff;
+  font-size: 60rpx;
+  height: 100rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-other{
+  padding: 0 30rpx;
+  padding-top: 40rpx;
+}
+.input-other-style{
+  border-bottom: 2rpx solid #eee;
+  font-size: 36rpx;
+  height: 100rpx;
+}
+.btn-area{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+.view-default{
+  flex: 1;
+}
+.view-res{
+  padding-right: 15rpx;
+}
+.view-sub{
+  padding-left: 15rpx;
+}
+.btn-default{
+  font-size: 38rpx;
+}
+.btn-sub{
+  background: #3b8cff;
+  color: #fff;
+}

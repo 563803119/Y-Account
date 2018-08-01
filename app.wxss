@@ -1,0 +1,45 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 200rpx 0; */
+  box-sizing: border-box;
+} 
+#empty{
+  display: flex;
+  height: 300rpx;
+  justify-content: center;
+  align-items: center;
+}
+#empty-tip{
+  color: #999;
+  font-size: 30rpx;
+}
+#count-list{
+  padding: 30rpx 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: row;
+}
+.count-list-left{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.count-list-right{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+}
+.count-list-price{
+  color: #f00;
+  font-size: 32rpx;
+}
+.count-list-tip{
+  color: #999;
+  font-size: 32rpx;
+  margin-top: 8rpx;
+}

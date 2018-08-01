@@ -1,0 +1,7 @@
+/* pages/account/account.wxss */
+.mycount-titleview{
+  padding: 20rpx;
+}
+.mycount-title{
+  color: #3b8cff
+}

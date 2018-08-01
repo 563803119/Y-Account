@@ -1,0 +1,145 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.content{
+  width: 100%;
+  padding-bottom: 150rpx;
+}
+.content-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.content-left{
+  flex: 1;
+  flex-direction: row;
+  display:flex;
+  align-items:center;
+}
+.content-right{
+  /* flex: 1; */
+  display: flex;
+  justify-content: flex-end;
+  align-items:flex-end;
+}
+.content-left-img{
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 32rpx;
+}
+.content-top-title{
+  color: #333;
+  font-size: 32rpx;
+  margin-left: 10rpx;
+}
+.right-botton{
+  height: 70rpx;
+  font-size: 32rpx;
+  color: #fff;
+  background: #3b8cff;
+  border: 0;
+  border-radius: 8rpx;
+  width: 100rpx;
+  line-height: 70rpx;
+  text-align: center;
+  padding: 0;
+  margin-left: 20rpx;
+}
+.left-botton{
+  margin-left: 10rpx;
+  background: #fff;
+  color: #333;
+}
+.content-left-view{
+  flex-direction: row;
+  display: flex;
+}
+.content-center{
+  padding: 30rpx;
+}
+.main{
+  padding: 30rpx;
+  background: #00F5FF;
+  border-radius: 30rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.main-top{
+  padding: 20rpx 0;
+}
+.main-center{
+  padding: 0rpx 0 20rpx 0;
+}
+.main-price{
+  font-size: 80rpx;
+  margin-left: 10rpx;
+}
+.main-content{
+  padding: 0 30rpx;
+}
+.count-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5rpx 0rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.count-top-left{
+  flex: 1;
+}
+.count-left-img{
+  width: 30rpx;
+  height: 30rpx;
+}
+.count-top-right-title{
+  font-size: 30rpx;
+  color: #ccc;
+}
+.view-btn{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30rpx;
+}
+.view-btn-right{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #3b8cff;
+  border-radius: 10rpx;
+  height: 90rpx;
+}
+.view-btn-img{
+  width: 50rpx;
+  height: 50rpx;
+}
+.view-btn-title{
+  color: #fff;
+  margin-left: 10rpx;
+}

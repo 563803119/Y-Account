@@ -1,0 +1,30 @@
+<!--pages/add/add.wxml-->
+<view class="container">
+  <!-- <form bindsubmit="formSubmit" bindreset="formReset" class='form'> -->
+  <view class='form'>
+    <view class='add-count'>
+      <text >支出金额</text>
+    </view>
+    <view class='input-view'>
+      <input name="price" id="price" class='input-style' bindinput="bindKeyInput" placeholder="0.00" value='{{form.price}}' />
+    </view>
+    <view class='input-other'>
+      <text class='input-other-txt'>支出类型</text>
+      <input name="discription" id="discription" class='input-other-style' bindinput="bindKeyInput" value='{{form.discription}}' placeholder="请填写支出类型，餐饮，买菜" />
+    </view>
+    <view class='input-other'>
+      <text class='input-other-txt'>备注</text>
+      <input name="remarks" id='remarks' class='input-other-style' bindinput="bindKeyInput" value='{{form.remarks}}' placeholder="请填写备注" />
+    </view>
+  </view>
+  <!-- </form> -->
+  <view class="btn-area">
+    <view class='view-default view-res'>
+      <button class='btn-default btn-res' wx:if="{{form.id}}" bindtap="formReset">删除</button>
+      <button class='btn-default btn-res' wx:else bindtap="formReset">重置</button>
+    </view>
+    <view class='view-default view-sub'>
+      <button class='btn-default btn-sub' bindtap="formSubmit">保存</button>
+    </view>
+  </view>
+</view>

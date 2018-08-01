@@ -1,0 +1,107 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+  <view class='content'>
+    <view class='content-top'>
+      <view class='content-left'>
+        <view class='content-left-view' wx:if="{{!hasUserInfo && canIUse}}">
+          <image class='content-left-img' src='../../images/user.png' mode="cover"></image>
+          <button class='right-botton left-botton'  open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录</button>
+        </view>
+        <block wx:else>
+        <image class='content-left-img' src='{{userInfo.avatarUrl}}' mode="cover"></image>
+        <text class='content-top-title'>{{userInfo.nickName}}</text>
+        </block>
+      </view>
+      <view class='content-right'>
+        <navigator class='right-botton' url="/pages/account/account" hover-class="navigator-hover">明细</navigator>
+        <navigator class='right-botton' url="/pages/charts/charts" hover-class="navigator-hover">统计</navigator>
+        <!-- <button class='right-botton' bindtap="bindViewTap">明细</button> -->
+      </view>
+    </view>
+    <view class='content-center'>
+      <view class='main'>
+        <view class='main-top'>
+          <text class='main-top-title'>本月支出</text>
+        </view>
+        <view class='main-center'>
+          <text class='main-dollar'>¥</text>
+          <text class='main-price'>0.00</text>
+        </view>
+      </view>
+    </view>
+    <view class='main-content'>
+      <view class='count-top'>
+        <view class='count-top-left'>
+          <text class='count-left-title'>最新收支</text>
+        </view>
+        <navigator class='count-top-right' url="/pages/account/account" hover-class="none" >
+           <text class='count-top-right-title'>更多</text>
+           <image class='count-left-img' src='../../images/right.png' mode="cover"></image>
+        </navigator>
+      </view>
+      <view class='count-center'>
+        <scroll-view scroll-y style="height: 550rpx;" >
+          <navigator id='count-list' url="/pages/add/add?id=1" hover-class="none">
+            <view class='count-list-left'>
+              <text class='count-list-title'>餐饮</text>
+              <text class='count-list-tip'>无备注</text>
+            </view>
+            <view class='count-list-right'>
+              <text class='count-list-price'>6.00</text>
+              <text class='count-list-tip'>2018-07-31</text>
+            </view>
+          </navigator>
+          <navigator id='count-list' url="/pages/add/add?id=2" hover-class="navigator-hover">
+            <view class='count-list-left'>
+              <text class='count-list-title'>餐饮</text>
+              <text class='count-list-tip'>无备注</text>
+            </view>
+            <view class='count-list-right'>
+              <text class='count-list-price'>6.00</text>
+              <text class='count-list-tip'>2018-07-31</text>
+            </view>
+          </navigator>
+          <navigator id='count-list' url="/pages/add/add?id=3" hover-class="navigator-hover">
+            <view class='count-list-left'>
+              <text class='count-list-title'>餐饮</text>
+              <text class='count-list-tip'>无备注</text>
+            </view>
+            <view class='count-list-right'>
+              <text class='count-list-price'>6.00</text>
+              <text class='count-list-tip'>2018-07-31</text>
+            </view>
+          </navigator>
+          <navigator id='count-list' url="/pages/add/add?id=4" hover-class="navigator-hover">
+            <view class='count-list-left'>
+              <text class='count-list-title'>餐饮</text>
+              <text class='count-list-tip'>无备注</text>
+            </view>
+            <view class='count-list-right'>
+              <text class='count-list-price'>6.00</text>
+              <text class='count-list-tip'>2018-07-31</text>
+            </view>
+          </navigator>
+        </scroll-view>
+        <!-- <view id='empty'>
+          <text class='id'>暂无数据</text>
+        </view> -->
+      </view>
+    </view>
+  </view>
+  <view class='view-btn'>
+    <navigator class='view-btn-right' url="/pages/add/add" hover-class="navigator-hover">
+      <image class='view-btn-img' src='../../images/add.png' mode="cover"></image>
+      <text class='view-btn-title'>记一笔支出</text>
+    </navigator>
+  </view>
+</view>

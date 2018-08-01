@@ -1,0 +1,16 @@
+<view class="container">
+  <scroll-view scroll-y style="height: {{clientHeight?clientHeight+'px':'auto'}};" bindscrolltolower="lower">
+    <view style='padding: 0 30rpx;'>
+    <navigator id='count-list' url="/pages/account/account">
+      <view class='count-list-left'>
+        <text class='count-list-title'>餐饮</text>
+        <text class='count-list-tip'>无备注</text>
+      </view>
+      <view class='count-list-right'>
+        <text class='count-list-price'>6.00</text>
+        <text class='count-list-tip'>2018-07-31</text>
+      </view>
+    </navigator>
+    </view>
+  </scroll-view>
+</view>
