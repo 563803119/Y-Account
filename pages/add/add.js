@@ -51,6 +51,7 @@ Page({
    */
   onLoad: function (options) {
     if (!options){return false}
+    console.log(options.id)
     this.data.form.id = options.id;
     this.setData({
       form: this.data.form

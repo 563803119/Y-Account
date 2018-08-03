@@ -7,7 +7,21 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    list: [{
+        id:'5',
+        name: '123',
+        date: '2017-08-03',
+        price: "6.00",
+        note: '无备注'
+      },{
+        id: '4',
+        name: '餐饮',
+        date: '2017-07-31',
+        price: "6.00",
+        note: '无备注'
+      }
+    ]
   },
   //事件处理函数
   bindViewTap: function() {

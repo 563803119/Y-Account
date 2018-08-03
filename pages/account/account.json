@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "账户统计"
+  "navigationBarTitleText": "账户统计",
+  "usingComponents": {
+    "count-list": "/pages/list/list"
+  }
 }

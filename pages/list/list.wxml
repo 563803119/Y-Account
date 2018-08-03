@@ -1,0 +1,11 @@
+<!--pages/list.wxml-->
+<navigator class='count-list' url="/pages/add/add?id={{countList.id}}" hover-class="none">
+  <view class='count-list-left'>
+    <text class='count-list-title'>{{countList.name}}</text>
+    <text class='count-list-tip'>{{countList.note}}</text>
+  </view>
+  <view class='count-list-right'>
+    <text class='count-list-price'>{{countList.price}}</text>
+    <text class='count-list-tip'>{{countList.date}}</text>
+  </view>
+</navigator>

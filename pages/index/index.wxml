@@ -51,46 +51,7 @@
       </view>
       <view class='count-center'>
         <scroll-view scroll-y style="height: 550rpx;" >
-          <navigator id='count-list' url="/pages/add/add?id=1" hover-class="none">
-            <view class='count-list-left'>
-              <text class='count-list-title'>餐饮</text>
-              <text class='count-list-tip'>无备注</text>
-            </view>
-            <view class='count-list-right'>
-              <text class='count-list-price'>6.00</text>
-              <text class='count-list-tip'>2018-07-31</text>
-            </view>
-          </navigator>
-          <navigator id='count-list' url="/pages/add/add?id=2" hover-class="navigator-hover">
-            <view class='count-list-left'>
-              <text class='count-list-title'>餐饮</text>
-              <text class='count-list-tip'>无备注</text>
-            </view>
-            <view class='count-list-right'>
-              <text class='count-list-price'>6.00</text>
-              <text class='count-list-tip'>2018-07-31</text>
-            </view>
-          </navigator>
-          <navigator id='count-list' url="/pages/add/add?id=3" hover-class="navigator-hover">
-            <view class='count-list-left'>
-              <text class='count-list-title'>餐饮</text>
-              <text class='count-list-tip'>无备注</text>
-            </view>
-            <view class='count-list-right'>
-              <text class='count-list-price'>6.00</text>
-              <text class='count-list-tip'>2018-07-31</text>
-            </view>
-          </navigator>
-          <navigator id='count-list' url="/pages/add/add?id=4" hover-class="navigator-hover">
-            <view class='count-list-left'>
-              <text class='count-list-title'>餐饮</text>
-              <text class='count-list-tip'>无备注</text>
-            </view>
-            <view class='count-list-right'>
-              <text class='count-list-price'>6.00</text>
-              <text class='count-list-tip'>2018-07-31</text>
-            </view>
-          </navigator>
+          <count-list wx:for="{{list}}" wx:key="{{index}}" count-list="{{item}}" ></count-list>
         </scroll-view>
         <!-- <view id='empty'>
           <text class='id'>暂无数据</text>
