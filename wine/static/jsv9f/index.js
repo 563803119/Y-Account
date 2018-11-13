@@ -42,6 +42,9 @@ window.onload = function () {
     // 全景图-陀螺仪
     var tuoluo = false;//阻止事件监听
     function borderLeft(direction) {
+        if(!$(".big-bg").is(":animated")){
+            $(".big-bg").stop(false,true).animate();
+        }
         var full_bgimgW = ($(".bg-img").width() - $(window).width() * (parseInt(direction))) / 2;
         $(".big-bg").css({
             'left': full_bgimgW + 'px'
@@ -78,23 +81,6 @@ window.onload = function () {
                 // if (Math.abs(longitude - preAngle) < 2) {
                 //     return;
                 // }
-                // alert(longitude+','+gamma+','+beta);
-                $('#spantxt').text('longitude:'+longitude+',gamma:'+gamma+',beta:'+beta);
-                if(Math.abs(gamma - preAngle) > 40){
-                    return false;
-                }
-                instance = gamma - preAngle;
-                preAngle = gamma;
-                var full_bgimgW = ($(".big-bg").width()) / (180); //每一度移动距离
-                var translateZ = parseInt(Math.round(instance) * full_bgimgW); //instance移动的度数
-                $('#spantxt1').text(translateZ);
-                $(".big-bg").css({
-                    'left': translateZ + 'px'
-                });
-                // if(flag){
-                //     firstAngle = gamma;
-                // }
-                return false;
                 //longitudeZ轴  [0, 360);beta X轴  [-180, 180);gamma Y轴 [-90, 90)
                 if (flag) {
                     if (longitude == 0 || longitude == 360 || longitude == 30) {
@@ -178,6 +164,9 @@ window.onload = function () {
                 }
 
                 translateZ = parseInt(Math.round(instance) * full_bgimgW) + initLeft;
+                if(!$(".big-bg").is(":animated")){
+                    $(".big-bg").stop(false,true).animate();
+                }
                 $(".big-bg").css({
                     'left': translateZ + 'px'
                 });
