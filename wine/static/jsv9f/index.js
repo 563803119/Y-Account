@@ -86,8 +86,8 @@ window.onload = function () {
                 instance = gamma - preAngle;
                 preAngle = gamma;
                 var full_bgimgW = ($(".big-bg").width()) / (180); //每一度移动距离
-                var translateZ = parseInt(Math.round(instance) * full_bgimgW) + initLeft; //instance移动的度数
-                
+                var translateZ = parseInt(Math.round(instance) * full_bgimgW); //instance移动的度数
+                $('#spantxt1').text(translateZ);
                 $(".big-bg").css({
                     'left': translateZ + 'px'
                 });
