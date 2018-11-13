@@ -1,0 +1,261 @@
+body {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+
+.loadding-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: url("../imagesv8/loading-bg.jpg") center top no-repeat;
+    background-size: cover;
+    z-index: 9999;
+}
+
+.loadding-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    transform: translate(-50%,-50%);
+}
+
+.loadding-container .full-wine {
+    transition: clip 1000ms linear;
+}
+
+.view {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.big-bg {
+    position: relative;
+    height: 100%;
+    display: inline-block;
+    font-size: 0;
+    transition: left 500ms ease-out;
+    transform: translateZ(0);
+}
+
+
+.big-bg .bg-img {
+    height: 100%;
+
+}
+
+.buy-img {
+    position: absolute;
+    width: 6rem;
+    right: 7rem;
+    bottom: 1.6rem;
+    animation: box-shadow 2000ms linear infinite;
+}
+
+.big-bg .p-img {
+    position: absolute;
+    animation: box-shadow 2000ms linear infinite;
+    cursor: pointer;
+}
+
+.p0-img {
+    position: absolute;
+    animation: box-shadow 2000ms linear infinite;
+    cursor: pointer;
+    width: 12rem;
+    right: 21rem;
+    top: 7.5rem;
+}
+
+.p1-img {
+    width: 8rem;
+    left: 8rem;
+    top: 9rem;
+}
+
+.p2-img {
+    width: 5.8rem;
+    left: 18.6rem;
+    top: 6.9rem;
+}
+
+.p3-img {
+    width: 6.4rem;
+    left: 26.5rem;
+    top: 9.5rem;
+}
+
+.p4-img {
+    width: 9rem;
+    left: 6.9rem;
+    top: 17.6rem;
+}
+.p5-img {
+    width: 7rem;
+    left: 17.5rem;
+    top: 16.4rem;
+}
+.p6-img {
+    width: 7.3rem;
+    left: 26rem;
+    top: 20.1rem;
+}
+
+.form-img {
+    position: absolute;
+    animation: box-shadow 2000ms linear infinite;
+    cursor: pointer;
+    width: 12.8rem;
+    right: 3.5rem;
+    top: 8rem;
+}
+
+.swiper-modal,.one-modal,.buy-modal,.form-modal,.form-modal-text {
+    opacity: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.form-modal-text{
+    opacity: 1;
+}
+
+.form-modal input {
+    border: none;
+    outline: none;
+    width: 39%;
+    height: 5%;
+    color: #fff;
+    background-color: rgba(0,0,0,0);
+}
+
+
+.modal-bg,.one-modal-bg,.buy-modal-bg,.form-modal-bg,.form-modal-text-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+
+.swiper-container,.one-modal img,.form-modal-text img{
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.form-content {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-left: 10%;
+}
+.form-content img {
+    width: 100%;
+    height: 100%;
+}
+.one-modal img ,.form-modal-text img{
+    left: 10%;
+}
+
+.form-modal-text .text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 60%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.username {
+    position: absolute;
+    left: 37%;
+    top: 40%;
+    letter-spacing: 1px;
+}
+.phone-num {
+    position: absolute;
+    left: 37%;
+    top: 53.5%;
+    letter-spacing: 1px;
+}
+
+.prize-btn {
+    position: absolute;
+    left: 23%;
+    top: 69%;
+    width: 54%;
+    height: 7%;
+}
+
+.buy-modal img {
+    position: absolute;
+    height: 80vh;
+    margin-top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 12px;
+}
+
+.swiper-container img {
+    width: 100%;
+}
+
+.swiper-container .swiper-button-next,  .swiper-container .swiper-button-prev {
+    width: 15px;
+    background-size: 15px 44px;
+    opacity: 0.5;
+    top: 58%;
+}
+.swiper-container .swiper-button-next {
+    right: 34px;
+}
+
+.swiper-container .swiper-button-prev {
+    left: 34px;
+}
+
+
+
+
+@keyframes box-shadow {
+    0% {
+        box-shadow:0 1px 1px rgba(255,255,255,0.2);
+    }
+    25% {
+        box-shadow:0 1px 5px rgba(255, 250, 225, 0.85);
+    }
+    50% {
+        box-shadow:0 1px 18px rgba(255, 250, 225, 0.85);
+    }
+    75% {
+        box-shadow:0 1px 5px rgba(255, 250, 225, 0.85);
+    }
+    100% {
+        box-shadow:0 1px 1px rgba(255,255,255,0.2);
+    }
+}
+
