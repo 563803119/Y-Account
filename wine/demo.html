@@ -41,7 +41,10 @@
 			init();
 			animate();
 			function init() {
-				camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 1100 );
+                camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 1, 11000 );
+                camera.position.x = 120;
+                camera.position.y = 60;
+                camera.position.z = 180;
 				controls = new THREE.DeviceOrientationControls( camera );
 				scene = new THREE.Scene();
 				var geometry = new THREE.SphereBufferGeometry( 500, 60, 40 );

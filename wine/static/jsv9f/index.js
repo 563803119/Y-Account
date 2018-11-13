@@ -164,12 +164,13 @@ window.onload = function () {
                 }
 
                 translateZ = parseInt(Math.round(instance) * full_bgimgW) + initLeft;
-                // if($(".big-bg").is(":animated")){
-                //     $(".big-bg").stop(false,true).animate();
-                // }
-                $(".big-bg").css({
-                    'left': translateZ + 'px'
-                });
+                if($(".big-bg").is(":animated")){
+                    $(".big-bg").stop(false,true).animate();
+                }
+                // $(".big-bg").css({
+                //     'left': translateZ + 'px'
+                // });
+                $(".big-bg").animate({'left': translateZ + 'px'},instance*5,function(){});
 
         };
         o.init();
