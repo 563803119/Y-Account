@@ -42,9 +42,9 @@ window.onload = function () {
     // 全景图-陀螺仪
     var tuoluo = false;//阻止事件监听
     function borderLeft(direction) {
-        if($(".big-bg").is(":animated")){
-            $(".big-bg").stop(false,true).animate();
-        }
+        // if($(".big-bg").is(":animated")){
+        //     $(".big-bg").stop(false,true).animate();
+        // }
         var full_bgimgW = ($(".bg-img").width() - $(window).width() * (parseInt(direction))) / 2;
         $(".big-bg").css({
             'left': full_bgimgW + 'px'
@@ -164,9 +164,9 @@ window.onload = function () {
                 }
 
                 translateZ = parseInt(Math.round(instance) * full_bgimgW) + initLeft;
-                if($(".big-bg").is(":animated")){
-                    $(".big-bg").stop(false,true).animate();
-                }
+                // if($(".big-bg").is(":animated")){
+                //     $(".big-bg").stop(false,true).animate();
+                // }
                 $(".big-bg").css({
                     'left': translateZ + 'px'
                 });
