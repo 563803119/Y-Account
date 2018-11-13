@@ -78,12 +78,7 @@ window.onload = function () {
                 // if (Math.abs(longitude - preAngle) < 2) {
                 //     return;
                 // }
-                // alert(longitude+','+gamma+','+beta);
-                $('#spantxt').text('longitude:'+longitude+',gamma:'+gamma+',beta:'+beta);
-                if(flag){
-                    
-                }
-                return false;
+
                 //longitudeZ轴  [0, 360);beta X轴  [-180, 180);gamma Y轴 [-90, 90)
                 if (flag) {
                     if (longitude == 0 || longitude == 360 || longitude == 30) {
