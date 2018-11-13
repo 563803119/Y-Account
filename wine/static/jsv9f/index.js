@@ -100,10 +100,10 @@ window.onload = function () {
                     /*2.根据偏移角度大于90度，判断*/
                     if (longitude - firstAngle > 60) {
                         borderLeft(1);
-                        return false
+                        // return false
                     } else if (longitude - firstAngle < -60) {
                         borderLeft(-1);
-                        return false
+                        // return false
                     } else {
                         if (longitude > firstAngle) {
                             instance = Math.abs(longitude - firstAngle);
@@ -116,21 +116,21 @@ window.onload = function () {
                     if (longitude > firstAngle && longitude < 225) {
                         if (longitude - firstAngle > 60) {
                             borderLeft(1);
-                            return false
+                            // return false
                         } else {
                             instance = Math.abs(longitude - firstAngle);
                         }
                     } else if (longitude < firstAngle && longitude > 0) {
                         if (longitude - firstAngle < -60) {
                             borderLeft(-1);
-                            return false
+                            // return false
                         } else {
                             instance = Math.abs(longitude - firstAngle) * (-1);
                         }
                     } else if (longitude < 360 && longitude > 225) {
                         if ((longitude - 360 - firstAngle) < -60) {
                             borderLeft(-1);
-                            return false
+                            // return false
                         } else {
                             instance = Math.abs(longitude - 360 - firstAngle) * (-1);
                         }
@@ -140,21 +140,21 @@ window.onload = function () {
                     if (longitude < firstAngle && longitude > 135) {
                         if (longitude - firstAngle < -60) {
                             borderLeft(-1);
-                            return false
+                            // return false
                         } else {
                             instance = Math.abs(longitude - firstAngle) * (-1);
                         }
                     } else if (longitude > firstAngle && longitude < 360) {
                         if ((longitude - firstAngle) > 60) {
                             borderLeft(1);
-                            return false
+                            // return false
                         } else {
                             instance = Math.abs(longitude - firstAngle);
                         }
                     } else if (longitude < 135 && longitude > 0) {
                         if ((360 - firstAngle + longitude) > 60) {
                             borderLeft(1);
-                            return false
+                            // return false
                         } else {
                             instance = Math.abs(360 - firstAngle + longitude);
                         }
