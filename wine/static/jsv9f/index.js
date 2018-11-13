@@ -170,7 +170,7 @@ window.onload = function () {
                 // $(".big-bg").css({
                 //     'left': translateZ + 'px'
                 // });
-                $(".big-bg").animate({'left': translateZ + 'px'},instance*10,function(){});
+                $(".big-bg").animate({'left': translateZ + 'px'},instance*15,function(){});
 
         };
         o.init();
