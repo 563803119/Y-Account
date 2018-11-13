@@ -80,9 +80,20 @@ window.onload = function () {
                 // }
                 // alert(longitude+','+gamma+','+beta);
                 $('#spantxt').text('longitude:'+longitude+',gamma:'+gamma+',beta:'+beta);
-                if(flag){
-                    
+                if(Math.abs(gamma - preAngle) > 40){
+                    return false;
                 }
+                instance = gamma - preAngle;
+                preAngle = gamma;
+                var full_bgimgW = ($(".big-bg").width()) / (180); //每一度移动距离
+                var translateZ = parseInt(Math.round(instance) * full_bgimgW) + initLeft; //instance移动的度数
+                
+                $(".big-bg").css({
+                    'left': translateZ + 'px'
+                });
+                // if(flag){
+                //     firstAngle = gamma;
+                // }
                 return false;
                 //longitudeZ轴  [0, 360);beta X轴  [-180, 180);gamma Y轴 [-90, 90)
                 if (flag) {
