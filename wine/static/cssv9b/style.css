@@ -42,7 +42,7 @@ body {
     height: 100%;
     display: inline-block;
     font-size: 0;
-    transition: left 500ms ease-out;
+    transition: left 500ms linear;
     transform: translateZ(0);
 }
 
